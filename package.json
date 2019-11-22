@@ -1,0 +1,34 @@
+{
+  "name": "@dwebjs/network",
+  "description": "Library for resolving dWeb keys via TLDs and dTLDs.",
+  "version": "1.0.0",
+  "contributors": [
+    "Jared Rice Sr. <jared@dpeeps.com>",
+    "Peeps Labs <labs@dpeeps.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/dwebjs/network/issues"
+  },
+  "dependencies": {
+    "call-me-maybe": "^1.0.1",
+    "concat-stream": "^1.6.0",
+    "debug": "^4.1.1"
+  },
+  "devDependencies": {
+    "tape": "^4.6.3"
+  },
+  "keywords": [
+    "dweb",
+    "dnames"
+  ],
+  "homepage": "https://dwebs.io",
+  "main": "index.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dwebjs/network.git"
+  },
+  "scripts": {
+    "test": "node test.js"
+  }
+}
