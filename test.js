@@ -7,7 +7,7 @@ var dmemoDns = require('./index')({
     txtRegex: /^"?dmemokey=([0-9a-f]{64})"?$/i
 })
 
-var FAKE_DAT = 'f'.repeat(64)
+var FAKE_DWEB = 'f'.repeat(64)
 
 tape('Successful test against cblgh.org', function(t) {
     dmemoDns.resolveName('cblgh.org', function(err, name) {
@@ -154,7 +154,7 @@ tape('Successful test against dbrowser.io (no dns-over-https)', function(t) {
 })
 
 tape('Successful test against dbrowser.io (no well-known/dweb)', function(t) {
-    dwebDns.resolveName('dbrowser.io', { noWellknownDat: true, ignoreCache: true }, function(err, name) {
+    dwebDns.resolveName('dbrowser.io', { noWellknownDWeb: true, ignoreCache: true }, function(err, name) {
         t.error(err)
         t.ok(/[0-9a-f]{64}/.test(name))
 
